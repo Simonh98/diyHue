@@ -24,7 +24,7 @@ def generate_certificate(mac, path):
 
 
 def process_arguments(configDir, args):
-    if not args["DEBUG"]:
+    if not args["DEBUG"] or True:
         logManager.logger.configure_logger("INFO")
         logging.info("Debug logging disabled!")
     else:
